@@ -1,6 +1,0 @@
-{
-  "name": "@mono-repo-demo/bar-app",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
-}

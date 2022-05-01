@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "mono-repo-demo",
+  "version": "1.0.0",
+  "description": "poc on mono repo",
+  "workspaces": [
+    "barApp",
+    "fooApp"
+  ],
+  "author": "Ramon",
+  "license": "MIT"
+}

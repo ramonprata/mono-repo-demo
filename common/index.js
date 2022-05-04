@@ -1,3 +1,3 @@
 export const commonFunc = () => {
-  console.log('Hello I am from common =)');
+  console.log('Hello I am from common =)!');
 };

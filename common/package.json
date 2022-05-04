@@ -2,9 +2,5 @@
   "name": "@mono-repo-demo/common",
   "version": "0.0.0",
   "private": true,
-  "main": "index.js",
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
-  }
+  "main": "index.js"
 }

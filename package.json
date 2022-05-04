@@ -2,11 +2,24 @@
   "private": true,
   "name": "mono-repo-demo",
   "version": "1.0.0",
-  "description": "poc on mono repo",
-  "workspaces": [
-    "barApp",
-    "fooApp"
-  ],
+  "description": "poc monorepo",
+  "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
+    "android:metro": "yarn workspace barApp start",
+    "android:start": "yarn workspace barApp android"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/mainApp",
+      "packages/fooApp",
+      "packages/common"
+    ],
+    "nohoist": [
+      "**/react",
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
   "author": "Ramon",
   "license": "MIT"
 }

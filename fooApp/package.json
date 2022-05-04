@@ -1,9 +1,0 @@
-{
-  "name": "@mono-repo-demo/foo-app",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "@mono-repo-demo/bar-app": "1.0.0"
-  }
-}

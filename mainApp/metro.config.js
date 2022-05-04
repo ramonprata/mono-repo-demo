@@ -1,8 +1,8 @@
 const path = require('path');
 const exclusionList = require('metro-config/src/defaults/exclusionList');
 const rootFolder = path.join(path.resolve(__dirname), '/../');
-const pathToCommonFolder = path.join(path.resolve(__dirname), '/common');
-const pathToMainAppFolder = path.join(path.resolve(__dirname), '/mainApp');
+const pathToCommonFolder = path.join(path.resolve(__dirname), '/../common');
+const pathToMainAppFolder = path.join(path.resolve(__dirname), '/../mainApp');
 const pathRootNodeModules = path.join(
   path.resolve(__dirname),
   '/../node_modules',

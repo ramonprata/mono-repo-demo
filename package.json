@@ -10,9 +10,9 @@
   },
   "workspaces": {
     "packages": [
-      "mainApp",
-      "fooApp",
-      "common"
+      "mainApp/**",
+      "fooApp/**",
+      "common/**"
     ],
     "nohoist": [
       "**/react",

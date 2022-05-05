@@ -5,8 +5,8 @@
   "description": "poc monorepo",
   "scripts": {
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
-    "android:metro": "yarn workspace barApp start",
-    "android:start": "yarn workspace barApp android"
+    "android:metro": "yarn workspace @mono-repo-demo/fooapp start",
+    "android:start": "yarn workspace @mono-repo-demo/fooapp android"
   },
   "workspaces": {
     "packages": [

@@ -1,5 +1,5 @@
 {
-  "name": "@mono-repo-demo/mainapp",
+  "name": "@mono-repo-demo/mainApp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@mono-repo-demo/common": "*",
     "react": "17.0.2",
     "react-native": "0.68.1"
   },

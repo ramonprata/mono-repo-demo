@@ -24,7 +24,6 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {commonFunc} from '@mono-repo-demo/common';
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';

@@ -3,14 +3,11 @@
  * https://github.com/facebook/react-native
  *
  * @format
- * @flow strict-local
  */
 
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
   Text,
@@ -18,16 +15,10 @@ import {
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import {MyComponentFromMain} from '@mono-repo-demo/mainApp/src';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {MyComponentFromMain} from '@mono-repo-demo/common/src';
 
-const App: () => Node = () => {
+const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -39,8 +30,12 @@ const App: () => Node = () => {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
 
       <View style={styles.container}>
-        <Text style={styles.text}>Hello, I am NL App</Text>
-        <MyComponentFromMain />
+        <View style={styles.content}>
+          <Text style={styles.text}>
+            Hello, I am a legacy app using a component coming from the new app
+          </Text>
+          <MyComponentFromMain />
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -48,14 +43,15 @@ const App: () => Node = () => {
 
 const styles = StyleSheet.create({
   container: {
+    height: '100%',
+    backgroundColor: '#fff',
+  },
+  content: {
     margin: 24,
     borderColor: '#ccc',
     borderWidth: 1,
     borderRadius: 8,
     padding: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fff',
   },
   highlight: {
     fontWeight: '700',
@@ -63,6 +59,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
     fontWeight: 'bold',
+    color: 'red',
   },
 });
 

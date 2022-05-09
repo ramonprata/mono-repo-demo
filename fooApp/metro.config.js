@@ -1,8 +1,7 @@
 const path = require('path');
 const exclusionList = require('metro-config/src/defaults/exclusionList');
 const rootFolder = path.join(path.resolve(__dirname), '/../');
-// const pathToCommonFolder = path.join(path.resolve(__dirname), '/../common');
-const pathTomainAppFolder = path.join(path.resolve(__dirname), '/../mainApp');
+const pathToCommonFolder = path.join(path.resolve(__dirname), '/../common');
 const pathRootNodeModules = path.join(
   path.resolve(__dirname),
   '/../node_modules',
@@ -19,7 +18,7 @@ module.exports = {
   },
   // Add additional Yarn workspaces to the module map.
   // This allows importing importing from all the project's packages.
-  watchFolders: [pathRootNodeModules, pathTomainAppFolder],
+  watchFolders: [pathRootNodeModules, pathToCommonFolder],
   resolver: {
     // Ensure we resolve nohoist libraries from this directory.
     // With "((?!fooApp).)", we're blocking all the cases were metro tries to
